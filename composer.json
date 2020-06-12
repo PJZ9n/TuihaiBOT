@@ -1,0 +1,14 @@
+{
+  "name": "pjz9n/tuihai-bot",
+  "type": "project",
+  "require": {
+    "monolog/monolog": "^2.1",
+    "abraham/twitteroauth": "^1.1"
+  },
+  "license": "GPL-v3",
+  "autoload": {
+    "psr-4": {
+      "PJZ9n\\TuihaiBot\\": "src"
+    }
+  }
+}
