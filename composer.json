@@ -9,7 +9,7 @@
   "license": "GPL-v3",
   "autoload": {
     "psr-4": {
-      "PJZ9n\\TuihaiBot\\": "src"
+      "PJZ9n\\TuihaiBot\\": "src/PJZ9n/TuihaiBot"
     }
   }
 }
