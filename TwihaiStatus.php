@@ -21,21 +21,4 @@
 
 declare(strict_types=1);
 
-namespace PJZ9n\TwihaiBot;
-
-use Monolog\Handler\RotatingFileHandler;
-use Monolog\Logger;
-
-require_once __DIR__ . "/../../../vendor/autoload.php";
-
-abstract class AppLog
-{
-    public static function get(): Logger
-    {
-        $logger = new Logger("AppLogger");
-        $logger->pushHandler(new RotatingFileHandler(__DIR__ . "/../../../logs/app-development.log", 0, Logger::DEBUG));
-        $logger->pushHandler(new RotatingFileHandler(__DIR__ . "/../../../logs/app-production.log", 0, Logger::INFO));
-        $logger->pushHandler(new RotatingFileHandler(__DIR__ . "/../../../logs/app-error.log", 0, Logger::NOTICE));
-        return $logger;
-    }
-}
+require_once __DIR__ . "/Bootstrap.php";

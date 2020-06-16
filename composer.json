@@ -1,5 +1,5 @@
 {
-  "name": "pjz9n/tuihai-bot",
+  "name": "pjz9n/twihai-bot",
   "type": "project",
   "require": {
     "monolog/monolog": "^2.1",
@@ -9,7 +9,7 @@
   "license": "GPL-v3",
   "autoload": {
     "psr-4": {
-      "PJZ9n\\TuihaiBot\\": "src/PJZ9n/TuihaiBot"
+      "PJZ9n\\TwihaiBot\\": "src/PJZ9n/TwihaiBot"
     }
   }
 }
