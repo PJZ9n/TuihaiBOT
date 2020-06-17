@@ -104,7 +104,7 @@ class UserAPI
      *
      * @throws APIException
      */
-    public function getFollowerLookup(array $users): array
+    public function getFollowerLookup(User ...$users): array
     {
         $rawFollowerLookup = $this->oauthUser->get("friendships/lookup", [
             "user_id" => implode(",", array_map(function (User $value): string {

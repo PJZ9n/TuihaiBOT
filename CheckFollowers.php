@@ -29,7 +29,7 @@ require_once __DIR__ . "/Bootstrap.php";
 AppLog::get()->debug("Check Followers...");
 
 $bot = new UserAPI($_ENV["BOT_TOKEN"], $_ENV["BOT_TOKEN_SECRET"]);
-$followerLookup = $bot->getFollowerLookup($bot->getFollowers());
+$followerLookup = $bot->getFollowerLookup(...$bot->getFollowers());
 foreach ($followerLookup as $follower) {
     if (!$follower->isFollowing() && !$follower->isFollowRequesting()) {
         if ($bot->follow($follower->getId())) {
